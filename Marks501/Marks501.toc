@@ -1,0 +1,7 @@
+## Interface: 16001
+## Title: Marks501
+## Version: 0.1
+## Notes: Reports the vendor value of poor-quality items in your bags.
+
+Inventory.lua
+Core.lua

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 48 48">
+    <defs>
+        <radialGradient id="corner-shadow" gradientUnits="userSpaceOnUse" cx="0" cy="48" r="47">
+            <stop stop-color="#100b09" stop-opacity=".88"/>
+            <stop offset=".42" stop-color="#100b09" stop-opacity=".62"/>
+            <stop offset=".76" stop-color="#100b09" stop-opacity=".24"/>
+            <stop offset="1" stop-color="#100b09" stop-opacity="0"/>
+        </radialGradient>
+        <linearGradient id="cloth" x1="0" y1="0" x2="0.85" y2="1">
+            <stop stop-color="#ffe4a0"/>
+            <stop offset=".43" stop-color="#dca153"/>
+            <stop offset="1" stop-color="#844325"/>
+        </linearGradient>
+        <path id="pouch" d="M12 10 8 4Q11 2 15 4Q18 2 23 4L20 10Q23 13 26 17Q29 21 27 25Q25 29 16 29Q7 29 5 25Q3 21 7 16Z"/>
+    </defs>
+    <rect width="48" height="48" fill="url(#corner-shadow)"/>
+    <g transform="translate(2 10) scale(1.125)">
+        <use href="#pouch" fill="url(#cloth)" stroke="#2c160d" stroke-width="2.2" stroke-linejoin="round"/>
+        <path d="M12 13Q8 17 8 21Q8 23 10 24M11 5 13 8" fill="none" stroke="#fff0ba" stroke-opacity=".85" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M20 13Q25 18 25 23Q25 26 20 27M18 5 17 8" fill="none" stroke="#794222" stroke-opacity=".74" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M11 10Q16 12 21 10L23 13" fill="none" stroke="#492211" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M11 9.8Q16 11.7 21 9.8L23 12.7" fill="none" stroke="#ffcf70" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+</svg>

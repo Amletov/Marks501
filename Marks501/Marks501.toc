@@ -1,7 +1,22 @@
 ## Interface: 16001
 ## Title: Marks501
-## Version: 0.1
-## Notes: Reports the vendor value of poor-quality items in your bags.
+## Version: 0.2.0
+## Notes: Reports junk value and adds marked bag items to Sell Junk.
+## Notes-deDE: Zeigt den Wert von Plunder und verkauft markierte Gegenstände beim Plunderverkauf mit.
+## Notes-esES: Muestra el valor de la chatarra y añade los objetos marcados a su venta.
+## Notes-esMX: Muestra el valor de la chatarra y añade los objetos marcados a su venta.
+## Notes-frFR: Indique la valeur de la camelote et ajoute les objets marqués à sa vente.
+## Notes-itIT: Mostra il valore delle cianfrusaglie e aggiunge gli oggetti contrassegnati alla vendita.
+## Notes-koKR: 잡동사니의 가치를 표시하고 판매할 때 표시한 아이템을 함께 판매합니다.
+## Notes-ptBR: Mostra o valor da sucata e inclui os itens marcados na venda.
+## Notes-ruRU: Показывает стоимость серых предметов и добавляет помеченные предметы к продаже хлама.
+## Notes-zhCN: 显示垃圾物品的价值，并在出售垃圾时一并出售已标记的物品。
+## Notes-zhTW: 顯示垃圾物品的價值，並在出售垃圾時一併出售已標記的物品。
+## SavedVariablesPerCharacter: Marks501DB
 
+Locale.lua
 Inventory.lua
 Core.lua
+SaleMarks.lua
+MerchantSales.lua
+BagMarks.lua

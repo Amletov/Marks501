@@ -1,0 +1,98 @@
+local _, addon = ...
+
+local translations = {
+    enUS = {
+        toggleSaleMark = "Toggle sale mark",
+        marksCleared = "All sale marks cleared.",
+        summary = "Poor-quality items: %d; value: %d copper.",
+        partialSummary = "Poor-quality items: %d; known value: %d copper.",
+        unknownPrice = "Items with unknown price: %d.",
+        unknownQuality = "Slots with unknown quality: %d.",
+        sellMarked = "Marked stacks to sell as well: %d. This can include items that are not junk.",
+    },
+    ruRU = {
+        toggleSaleMark = "Пометить / снять метку «на продажу»",
+        marksCleared = "Все метки «на продажу» сняты.",
+        summary = "серых предметов: %d; стоимость: %d мед.",
+        partialSummary = "серых предметов: %d; известная стоимость: %d мед.",
+        unknownPrice = "Без цены: %d шт.",
+        unknownQuality = "Слотов с неизвестным качеством: %d.",
+        sellMarked = "Также будут проданы помеченные стопки: %d. Среди них могут быть не только серые предметы.",
+    },
+    deDE = {
+        toggleSaleMark = "Verkaufsmarkierung umschalten",
+        marksCleared = "Alle Verkaufsmarkierungen wurden entfernt.",
+        summary = "Gegenstände minderer Qualität: %d; Wert: %d Kupfer.",
+        partialSummary = "Gegenstände minderer Qualität: %d; bekannter Wert: %d Kupfer.",
+        unknownPrice = "Gegenstände mit unbekanntem Preis: %d.",
+        unknownQuality = "Plätze mit unbekannter Qualität: %d.",
+        sellMarked = "Zusätzlich werden %d markierte Stapel verkauft. Darunter können auch Gegenstände sein, die kein Plunder sind.",
+    },
+    esES = {
+        toggleSaleMark = "Marcar o desmarcar para vender",
+        marksCleared = "Se han quitado todas las marcas de venta.",
+        summary = "Objetos de baja calidad: %d; valor: %d de cobre.",
+        partialSummary = "Objetos de baja calidad: %d; valor conocido: %d de cobre.",
+        unknownPrice = "Objetos de precio desconocido: %d.",
+        unknownQuality = "Casillas de calidad desconocida: %d.",
+        sellMarked = "También se venderán %d pilas marcadas. Pueden incluir objetos que no son chatarra.",
+    },
+    frFR = {
+        toggleSaleMark = "Activer ou retirer le marquage pour la vente",
+        marksCleared = "Toutes les marques de vente ont été retirées.",
+        summary = "Objets de qualité médiocre : %d ; valeur : %d cuivre.",
+        partialSummary = "Objets de qualité médiocre : %d ; valeur connue : %d cuivre.",
+        unknownPrice = "Objets au prix inconnu : %d.",
+        unknownQuality = "Emplacements de qualité inconnue : %d.",
+        sellMarked = "Les piles marquées seront aussi vendues : %d. Elles peuvent contenir des objets qui ne sont pas de la camelote.",
+    },
+    itIT = {
+        toggleSaleMark = "Segna o deseleziona per la vendita",
+        marksCleared = "Tutti i contrassegni di vendita sono stati rimossi.",
+        summary = "Oggetti di scarsa qualità: %d; valore: %d rame.",
+        partialSummary = "Oggetti di scarsa qualità: %d; valore noto: %d rame.",
+        unknownPrice = "Oggetti con prezzo sconosciuto: %d.",
+        unknownQuality = "Scomparti con qualità sconosciuta: %d.",
+        sellMarked = "Saranno vendute anche %d pile contrassegnate, che possono includere oggetti diversi dalle cianfrusaglie.",
+    },
+    koKR = {
+        toggleSaleMark = "판매 표시 설정 또는 해제",
+        marksCleared = "모든 판매 표시를 해제했습니다.",
+        summary = "하급 아이템: %d개, 가치: %d코퍼.",
+        partialSummary = "하급 아이템: %d개, 확인된 가치: %d코퍼.",
+        unknownPrice = "가격을 알 수 없는 아이템: %d개.",
+        unknownQuality = "품질을 알 수 없는 칸: %d개.",
+        sellMarked = "표시된 아이템 묶음도 %d개 판매합니다. 잡동사니가 아닌 아이템이 포함될 수 있습니다.",
+    },
+    ptBR = {
+        toggleSaleMark = "Marcar ou desmarcar para venda",
+        marksCleared = "Todas as marcações de venda foram removidas.",
+        summary = "Itens de baixa qualidade: %d; valor: %d de cobre.",
+        partialSummary = "Itens de baixa qualidade: %d; valor conhecido: %d de cobre.",
+        unknownPrice = "Itens com preço desconhecido: %d.",
+        unknownQuality = "Espaços com qualidade desconhecida: %d.",
+        sellMarked = "Também serão vendidas %d pilhas marcadas, que podem incluir itens que não são sucata.",
+    },
+    zhCN = {
+        toggleSaleMark = "切换出售标记",
+        marksCleared = "已清除所有出售标记。",
+        summary = "粗糙品质物品：%d 件；价值：%d 铜。",
+        partialSummary = "粗糙品质物品：%d 件；已知价值：%d 铜。",
+        unknownPrice = "价格未知的物品：%d 件。",
+        unknownQuality = "品质未知的物品栏位：%d 个。",
+        sellMarked = "还将出售 %d 组已标记的物品，其中可能包含非垃圾物品。",
+    },
+    zhTW = {
+        toggleSaleMark = "切換出售標記",
+        marksCleared = "已清除所有出售標記。",
+        summary = "粗劣品質物品：%d 件；價值：%d 銅。",
+        partialSummary = "粗劣品質物品：%d 件；已知價值：%d 銅。",
+        unknownPrice = "價格未知的物品：%d 件。",
+        unknownQuality = "品質未知的物品欄位：%d 個。",
+        sellMarked = "還會出售 %d 組已標記的物品，其中可能包含非垃圾物品。",
+    },
+}
+
+translations.enGB = translations.enUS
+translations.esMX = translations.esES
+addon.L = translations[GetLocale()] or translations.enUS

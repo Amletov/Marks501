@@ -1,0 +1,22 @@
+# OS metadata
+.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Editor caches and temporary files
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*~
+
+# Local Lua build and test outputs
+luac.out
+*.luac
+/.luacov.stats.out
+/.luacov.report.out
+
+# Release packages
+/dist/
+/Marks501-*.zip
